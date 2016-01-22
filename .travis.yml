@@ -1,0 +1,7 @@
+language: csharp
+solution: MSBuildNuGet.sln
+install:
+  - nuget restore MSBuildNuGet.sln
+  - nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Debug MSBuildNuGet.sln
