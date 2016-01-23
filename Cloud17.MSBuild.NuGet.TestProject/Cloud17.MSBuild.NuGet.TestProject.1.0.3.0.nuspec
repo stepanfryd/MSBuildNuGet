@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Cloud17.MSBuild.NuGet.TestProject</id>
+    <version>1.0.3.0</version>
+    <authors>This is company owner</authors>
+    <owners>This is company owner</owners>
+    <projectUrl>https://ft-panda.visualstudio.com/DefaultCollection/Panda</projectUrl>
+    <iconUrl>\\fintraxdc1\Credit Agricole\NuGets\IconsFintrax.png</iconUrl>
+    <description>This is assembly description</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright ©  2015</copyright>
+    <dependencies>
+      <dependency id="Common.Logging" version="3.2.0" />
+      <dependency id="Common.Logging.Core" version="3.2.0" />
+      <dependency id="Unity" version="3.5.1404.0" />
+      <dependency id="Unity.Interception" version="3.5.1404.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\_WORK\Fintrax\Panda\Main\Source\Solution Items\NuGet\Template\tools\*" target="tools" />
+    <file src="C:\_WORK\Cloud17.MSBuild.NuGet\Cloud17.MSBuild.NuGet.TestProject\bin\Debug\Cloud17.MSBuild.NuGet.TestProject.dll" target="lib\net451\Cloud17.MSBuild.NuGet.TestProject.dll" />
+    <file src="C:\_WORK\Cloud17.MSBuild.NuGet\Cloud17.MSBuild.NuGet.TestProject\bin\Debug\Cloud17.MSBuild.NuGet.TestProject.pdb" target="lib\net451\Cloud17.MSBuild.NuGet.TestProject.pdb" />
+    <file src="C:\_WORK\Cloud17.MSBuild.NuGet\Cloud17.MSBuild.NuGet.TestProject\bin\Debug\Cloud17.MSBuild.NuGet.TestProject.xml" target="lib\net451\Cloud17.MSBuild.NuGet.TestProject.xml" />
+  </files>
+</package>

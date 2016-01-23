@@ -1,7 +1,10 @@
 language: csharp
 solution: MSBuildNuGet.sln
 install:
-  - nuget restore MSBuildNuGet.sln
-  - nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
+- nuget restore MSBuildNuGet.sln
+- nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Debug MSBuildNuGet.sln
+- xbuild /p:Configuration=Debug MSBuildNuGet.sln
+notifications:
+  slack:
+    secure: DeCJCwTRhOMhWEEJIlrcOiIk3eGnEm+QGY7rxVeXj19C2IoXF9rcBe8hFHXxMzI9WLuRr5ruuHNoMUFoKjBVSD+OUYIE2T59oGsDa0U+9F+wWHRdWqDbM9fQUC/zQKf0QsKvbIbHQ1payeSCS1pksmSsATgKkG03IzamLVw4fS2THRDPC8mkdUWBE/TQqR7rxQDgNKGb98VAXsc7EJva2sZA7Xo4ltRYtGg4Hm1FH0b1eD55oiVnoqkHlWPEZIo2IHHxQDriq+ZoXwJ8knhEUcyhxs83KcbaO1ESblwyxru7zW9DLNhVePNC11CxAPViHjGH5Rcf5giV4k8XQjiB4wduh43+JJjdke+JiwgDofL6vtuukRljuruiSdRRgVDtUAdqG8N8eRRknhjoDXVs2tsAaRvz9WCT9a4QgLxUcXkhWkrfE1EaGmsgcFP6NqkjPZlhqdHt4Ac3c5zT0NkvEFPaar+QvcX9nk+LhIkHUT62Um0uIYSTmxeqcPnxpaTdWJLng9arQUcrEucGY7Tm4TioD8CELcRYI55hYgkA2+c8AKoAZ6ZX/MZ6rWJAD4n/OwxDfhfvrXt9qZNmDlqX2TTJUmFiGkZX6D/vDjUJYMdCp/LYlXAHlAHehNiJKDobP80D0KeQ4Kx8BM9WDvopYyy0EbtRP51vQ/4GTWJHZf0=
